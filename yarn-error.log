@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add react-transition-group
+
+PATH: 
+  /home/ubanna/.local/bin:/home/ubanna/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubanna/Android/Sdk/emulator:/home/ubanna/Android/Sdk/tools:/home/ubanna/Android/Sdk/tools/bin:/home/ubanna/Android/Sdk/platform-tools:/home/ubanna/Android/Sdk/emulator:/home/ubanna/Android/Sdk/tools:/home/ubanna/Android/Sdk/tools/bin:/home/ubanna/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/home/ubanna/Desktop/landing_page/node_modules/buffer-equal-constant-time/.npmignore'
+
+npm manifest: 
+  {
+    "name": "landing_page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "JSON2": "^0.1.0",
+      "axios": "^0.19.0",
+      "bcrypt": "^3.0.6",
+      "body-parser": "^1.19.0",
+      "concurrently": "^4.1.1",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.6.9",
+      "nodemon": "^1.19.1",
+      "whatwg-fetch": "^3.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "start": "node index.js",
+      "server": "nodemon index.js",
+      "client": "npm run start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\" "
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Ubanna/Landing_page_react.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Ubanna/Landing_page_react/issues"
+    },
+    "homepage": "https://github.com/Ubanna/Landing_page_react#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
