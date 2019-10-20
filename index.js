@@ -7,19 +7,19 @@ const jwt = require('jsonwebtoken')
 var cors = require('cors')
 const app = express()
 require("dotenv/config")
-app.use(cors());
+// app.use(cors());
 
-app.use((request, response, next) => {
-  response.header("Access-Control-Allow-Origin", "*");
-  response.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+// app.use((request, response, next) => {
+//   response.header("Access-Control-Allow-Origin", "*");
+//   response.header("Access-Control-Allow-Headers", "Content-Type");
+//   next();
+// });
 
-// var corsOptions = {
-// 	origin: 'http://localhost:3000',
-// 	optionsSuccessStatus: 200
-// };
-// app.use(cors(corsOptions));
+var corsOptions = {
+	origin: 'http://localhost:3000',
+	optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.json())
 
 // mongoose.connect('mongodb://localhost:27017/soccerDatabase', {useNewUrlParser: true})
