@@ -5,14 +5,6 @@ const UserSession = require('../models/UserSession');
 const mongoose = require("mongoose")
 const jwt = require('jsonwebtoken')
 
-var cors = require('cors')
-
-var corsOptions = {
-	origin: 'http://localhost:3000',
-	optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
-app.use(bodyParser.json())
 
 router.get('/verify', (req, res, next) => {
     // Get the token

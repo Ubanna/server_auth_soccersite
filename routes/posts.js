@@ -4,14 +4,7 @@ const User = require('../models/User');
 const mongoose = require("mongoose")
 const UserSession = require('../models/UserSession');
 const jwt = require('jsonwebtoken')
-var cors = require('cors')
 
-var corsOptions = {
-	origin: 'http://localhost:3000',
-	optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
-app.use(bodyParser.json())
 
   /*
    * Sign up
