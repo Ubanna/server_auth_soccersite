@@ -46,7 +46,7 @@ app.use('/delete', deleteRoute)
 
 
 mongoose
-	.connect(process.env.CONNECTION, {useNewUrlParser: true})
+	.connect(`mongodb+srv://test:${process.env.CONNECTION}@cluster0-iiyzw.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser: true})
 	.then(() => console.log('connected'))
 	.catch((err) => console.log('failed to connect', err));
 app.use(cors());
