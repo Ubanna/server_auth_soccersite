@@ -2,7 +2,7 @@
   "name": "soccerserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "JSON2": "^0.1.0",
     "bcrypt": "^3.0.6",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
