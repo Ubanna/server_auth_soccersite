@@ -16,7 +16,7 @@ app.use((request, response, next) => {
 });
 
 var corsOptions = {
-	origin: 'https://landingpage.danekehu.now.sh/',
+	origin:  "*",
 	optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
