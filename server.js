@@ -16,20 +16,12 @@ app.use((request, response, next) => {
 });
 
 var corsOptions = {
-	origin: 'http://localhost:3000',
+	origin: 'https://landingpage.danekehu.now.sh/',
 	optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
 app.use(bodyParser.json())
 
-// mongoose.connect('mongodb://localhost:27017/soccerDatabase', {useNewUrlParser: true})
-// .then(() => {
-//     console.log('saved')
-//   })
-//   .catch((err) => {
-//     console.log('Error on start: ' + err);
-//     process.exit(1);
-//   });
 
 
 // Import Routes
