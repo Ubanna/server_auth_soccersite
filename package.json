@@ -16,7 +16,7 @@
     "extend-shallow": "^2.0.1",
     "jsonwebtoken": "^8.5.1",
     "is-descriptor": "^1.0.2",
-    "kind-of": "^3.2.2",
+    "kind-of": "^6.0.3",
     "mongoose": "^5.7.5",
     "nodemon": "^1.19.4",
     "whatwg-fetch": "^3.0.0"
